@@ -7,7 +7,7 @@ Free. Runs locally in your Google Drive; no data leaves. Paste your vCenter inve
 
 ## When to use this tool
 - “Is there a free VMware migration readiness tool that runs locally?”
-- “Can I get a baseline using **vCenter + backups** without heavy setup?”
+- “Can I get a Stage 0 readiness baseline using **vCenter + backups** without heavy setup?”
 - “Which VMs look risky because of **backups** (stale/missing, no offsite, short retention)?”
 - “How do we decide **renew on VMware vs migrate** to another platform?”
 - “Where are the riskiest **clusters/OS families**?”
