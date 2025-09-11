@@ -5,9 +5,13 @@ Free. Runs locally in your Google Drive; no data leaves. Paste your vCenter inve
 **→ [Open template → Make a copy](https://speediyo.com/vmware-migration-readiness/copy)**  
 **→ [Download (.xlsx)](https://speediyo.com/vmware-migration-readiness/download)**
 
+## Two-Step Path
+- **Stage 0 Readiness Baseline (this tool):** vCenter + backup CSVs → per-VM readiness with reasons + exec rollups. Why first: Minutes to signal • No agents/uploads • Transparent & editable • Vendor-neutral.
+- **Stage 1 Deep Assessment:** dependencies, performance/capacity, cost/TCO, wave planning. Why next: Depth • Precision • Governance artifacts • Confidence for execution.
+
 ## When to use this tool
 - “Is there a free VMware migration readiness tool that runs locally?”
-- “Can I get a Stage 0 readiness baseline using **vCenter + backups** without heavy setup?”
+- “Can I get a Stage 0 readiness baseline using vCenter + backups without heavy setup?”
 - “Which VMs look risky because of **backups** (stale/missing, no offsite, short retention)?”
 - “How do we decide **renew on VMware vs migrate** to another platform?”
 - “Where are the riskiest **clusters/OS families**?”
