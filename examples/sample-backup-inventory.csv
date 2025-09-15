@@ -1,0 +1,12 @@
+vm_name,job_name,last_backup_time,retention_days,frequency,backup_size_gb,job_tags
+vm-0434,backup-vm-0434,2025-08-30 2:05:48,30,daily,18.95,compliance
+vm-0095,backup-vm-0095,2025-08-31 2:05:48,30,daily,16.94,"prod,monthly"
+vm-0033,backup-vm-0033,2025-09-01 2:05:48,30,daily,11.42,"legacy,compliance"
+vm-0843,backup-vm-0843,2024-12-14 9:11:06,30,daily,14.77,"legacy,compliance"
+vm-0307,backup-vm-0307,2025-08-12 15:23:11,30,daily,2.46,prod
+vm-0792,backup-vm-0792,2025-07-31 21:34:41,30,daily,16.86,"monthly,compliance"
+vm-0942,backup-vm-0942,2025-07-31 5:14:56,30,daily,9.02,monthly
+vm-0572,backup-vm-0572,2025-07-25 2:43:25,30,daily,4.57,prod
+vm-0646,backup-vm-0646,2025-08-07 9:08:09,30,daily,17.3,"prod,prod"
+vm-0700,backup-vm-0700,2025-07-23 4:24:44,30,daily,18.03,"monthly,monthly"
+vm-0846,backup-vm-0846,2025-03-09 3:38:50,30,monthly,5.18,monthly

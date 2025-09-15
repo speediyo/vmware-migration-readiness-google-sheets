@@ -1,0 +1,12 @@
+Name,Guest OS,IP Address,Power State,Host,Cluster,Resource Pool,Tags,Instance UUID,uptime_seconds
+vm-0008,CentOS 6,49.50.91.217,PoweredOff,esxi-3,cluster-1,Web Pool,critical,55def678-a80b-418d-b7ec-8e55e3393469,9060015
+vm-0009,Debian 10,162.50.163.60,PoweredOn,esxi-3,cluster-2,Dev Pool,"test,critical",2c87303d-8ff5-4bbd-a415-23e6724d0355,14835755
+vm-0010,Windows Server 2016,63.131.140.140,PoweredOff,esxi-2,cluster-2,Dev Pool,"archive,prod",b37f15f5-71df-4ebc-861d-a7e68d17f545,4210741
+vm-0011,Debian 10,21.191.10.50,PoweredOn,esxi-1,cluster-3,Dev Pool,prod,5849cbba-1d87-46a9-95b1-26afad9bf0a7,23176345
+vm-0012,Windows Server 2019,90.200.48.75,PoweredOff,esxi-1,cluster-1,Infra Pool,critical,d0e3dde9-17ba-4be3-9bf3-152a0b77fa53,14809877
+vm-0013,Ubuntu 20.04,142.145.73.159,PoweredOn,esxi-2,cluster-2,Infra Pool,archive,100b3ba5-652e-4fe1-aed1-ef09e7481060,5746654
+vm-0014,Ubuntu 20.04,179.21.240.111,PoweredOn,esxi-3,cluster-3,Web Pool,"dev,prod,test",174280dc-26de-461e-a85e-b40d1b60f744,4031224
+vm-0015,CentOS 7,64.1.73.239,PoweredOn,esxi-4,cluster-3,Infra Pool,"prod,archive,archive",3f7c150b-522e-4ae7-ab4b-ffbb836c4fc7,13414302
+vm-0016,Windows Server 2016,213.43.83.35,PoweredOff,esxi-4,cluster-1,Web Pool,"prod,critical,prod",a2edf6ff-21d5-43c9-874f-c943b5ed9e1c,15015816
+vm-0017,Ubuntu 20.04,124.219.177.153,PoweredOff,esxi-5,cluster-3,Dev Pool,"test,test,critical",365de677-4a7f-4392-8df5-5c9c68bcfae4,7152854
+vm-0018,Debian 10,5.246.106.35,PoweredOff,esxi-1,cluster-3,Web Pool,"test,prod,test",4fbc51bb-a5b2-4644-bcff-aa9d14f98f9f,24890562
