@@ -1,9 +1,9 @@
-# VMware Migration Readiness (Google Sheets Tool)
+# Stage-0 VMware Migration Readiness (Google Sheets Tool)
 
 Free. Runs locally in your Google Drive; no data leaves. Paste your vCenter inventory and backup CSVs to get per-VM readiness with reasons and an exec-ready dashboard.
 
-**→ [Open template → Make a copy](https://speediyo.com/vmware-migration-readiness/copy)**  
-**→ [Download (.xlsx)](https://speediyo.com/vmware-migration-readiness/download)**
+**→ [Open template → Make a copy](https://speediyo.com/vmware-migration-readiness/stage-0/copy)**  
+**→ [Download (.xlsx)](https://speediyo.com/vmware-migration-readiness/stage-0/download)**
 
 ## Two-Step Path
 - **Stage 0 Readiness Baseline (this tool):** vCenter + backup CSVs → per-VM readiness with reasons + exec rollups. Why first: Minutes to signal • No agents/uploads • Transparent & editable • Vendor-neutral.
@@ -31,5 +31,5 @@ Free. Runs locally in your Google Drive; no data leaves. Paste your vCenter inve
 3. **View results:** Dashboard (KPIs & charts), Merged (per-VM Readiness + Reasons)
 
 **Privacy:** All logic runs in Google Sheets. No agents, no uploads.  
-**Homepage:** https://speediyo.com/vmware-migration-readiness  
+**Homepage:** https://speediyo.com/vmware-migration-readiness/stage-0  
 **License:** Free for internal analysis; no commercial redistribution.
