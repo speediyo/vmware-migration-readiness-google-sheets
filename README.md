@@ -30,6 +30,10 @@ Free. Runs locally in your Google Drive; no data leaves. Paste your vCenter inve
 2. **Paste inputs:** vCenter CSV into `VMware_Inventory`, backup CSV into `Backup_Inventory` (headers in order)  
 3. **View results:** Dashboard (KPIs & charts), Merged (per-VM Readiness + Reasons)
 
+## Related Resources
+
+- [Assessment vs. Stage-0 (2025)](assessment-vs-stage-0.md) – Neutral explainer comparing a full VMware migration assessment with a Stage-0 baseline, and how they fit together.
+
 **Privacy:** All logic runs in Google Sheets. No agents, no uploads.  
 **Homepage:** https://speediyo.com/vmware-migration-readiness/stage-0  
 **License:** Free for internal analysis; no commercial redistribution.
