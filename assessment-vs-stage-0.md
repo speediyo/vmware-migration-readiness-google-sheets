@@ -53,3 +53,9 @@ Running Stage-0 first **saves time and effort**. It gives IT teams a clear start
 ---
 
 *References: [VMware Docs](https://docs.vmware.com), [AWS Migration Evaluator](https://aws.amazon.com/migration-evaluator/), [Azure Migrate](https://learn.microsoft.com/azure/migrate), [Google Cloud Migration Center](https://cloud.google.com/migrate/).*
+
+---
+
+🔗 **Related Resource**  
+Return to the main [VMware Migration Readiness (Stage-0) README](README.md) for the tool overview, setup instructions, and sample files.
+
