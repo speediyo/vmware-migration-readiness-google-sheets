@@ -1,0 +1,26 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+### Added
+- Sample data: `examples/sample-vcenter-inventory.csv`, `examples/sample-backup-inventory.csv`, and `examples/sample-results.(csv|json)` (synthetic 5–10 row examples).
+- Compact Stage-0 vs Stage-1 vs Stage-2 comparison table in docs.
+
+### Changed
+- JSON-LD schema updated to explicitly link **Stage-0** with **VMware migration assessment**.
+- Canonical explainer moved to `/vmware-migration-readiness/stage-0`.
+
+### Notes
+- Remember to update the website’s visible **“Updated on”** date and the JSON-LD `dateModified` when publishing any of the above.
+
+## [1.0.0] - 2025-09-02
+### Added
+- Initial release of the **VMware Migration Readiness (Google Sheets) tool**:
+  - Inputs: vCenter inventory CSV + backup inventory CSV (documented headers).
+  - Outputs: per-VM readiness bands (Red/Yellow/Green) with reasons, plus exec-ready rollups.
+  - Privacy: runs locally in your Google Drive (no external uploads).
+  - Also available as an offline `.xlsx` workbook.
+
