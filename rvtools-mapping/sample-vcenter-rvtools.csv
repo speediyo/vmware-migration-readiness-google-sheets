@@ -1,0 +1,7 @@
+vInfo.Name,vInfo.OS,vInfo.IPAddress,vInfo.Powerstate,vInfo.ESXHost,vInfo.Cluster,vInfo.ResourcePool,vInfo.InstanceUUID,vHardware.NumCPU,vHardware.MemoryMB,vInfo.Uptime (days),vTools.Version,vTag.Tags
+APP01,Windows Server 2019,10.10.10.21,PoweredOn,esx01.lab.local,Cluster-A,Prod,500a1c1f-9a1b-4fd1-9b1e-111111111111,4,8192,32,12365,production;pci
+DB01,Windows Server 2016,10.10.10.22,PoweredOn,esx02.lab.local,Cluster-A,Prod,500a1c1f-9a1b-4fd1-9b1e-222222222222,8,16384,210,12288,production;critical
+WEB01,Ubuntu 22.04,10.10.10.23,PoweredOn,esx03.lab.local,Cluster-B,Web,500a1c1f-9a1b-4fd1-9b1e-333333333333,2,4096,5,11333,web
+LEGACY01,CentOS 6,10.10.10.24,PoweredOn,esx03.lab.local,Cluster-B,Legacy,500a1c1f-9a1b-4fd1-9b1e-444444444444,2,2048,740,0,legacy
+FILE01,Windows Server 2012 R2,10.10.10.25,PoweredOn,esx01.lab.local,Cluster-A,Infra,500a1c1f-9a1b-4fd1-9b1e-555555555555,4,12288,400,11333,backup;infra
+TEST01,Ubuntu 20.04,10.10.10.26,PoweredOff,esx02.lab.local,Cluster-A,Test,500a1c1f-9a1b-4fd1-9b1e-666666666666,1,2048,0,0,test

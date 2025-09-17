@@ -1,0 +1,11 @@
+vm_name,migration_risk,risk_reason
+vm-0008,red,"backup too old, unsupported or legacy OS"
+vm-0009,red,backup too old
+vm-0010,red,backup too old
+vm-0011,red,"backup too old, uptime over 180 days"
+vm-0012,yellow,"tagged as production, tagged as critical or DB or AD or DNS"
+vm-0013,red,backup too old
+vm-0014,red,backup too old
+vm-0015,red,backup too old
+vm-0016,red,backup too old
+vm-0018,red,"backup too old, uptime over 180 days"

@@ -1,0 +1,23 @@
+stage0_field,source_file,source_field,transform,notes
+vm_name,sample-vcenter-rvtools.csv,vInfo.Name,none,Mandatory key for join
+os_family,sample-vcenter-rvtools.csv,vInfo.OS,normalize to family (Windows/Linux/Other),"Use simple contains rules (win, ubuntu, centos, rhel)"
+ip_address,sample-vcenter-rvtools.csv,vInfo.IPAddress,first IPv4 or blank,Strip multiple; keep first
+power_state,sample-vcenter-rvtools.csv,vInfo.Powerstate,uppercase (ON/OFF),Normalize
+host_name,sample-vcenter-rvtools.csv,vInfo.ESXHost,none,
+cluster,sample-vcenter-rvtools.csv,vInfo.Cluster,none,
+resource_pool,sample-vcenter-rvtools.csv,vInfo.ResourcePool,none,
+instance_uuid,sample-vcenter-rvtools.csv,vInfo.InstanceUUID,none,Optional but useful for dedupe
+vcpu,sample-vcenter-rvtools.csv,vHardware.NumCPU,to integer,
+memory_mb,sample-vcenter-rvtools.csv,vHardware.MemoryMB,to integer,
+uptime_seconds,sample-vcenter-rvtools.csv,vInfo.Uptime (days),days * 86400,"If blank, treat as 0"
+tools_version,sample-vcenter-rvtools.csv,vTools.Version,none,
+tags,sample-vcenter-rvtools.csv,vTag.Tags,"lowercase, split by ;",Trim and lowercase
+backup_job,sample-backup-inventory.csv,BackupJob,none,
+last_backup_time_utc,sample-backup-inventory.csv,LastBackupTimeUTC,to ISO8601,Empty = no backup found
+backup_frequency,sample-backup-inventory.csv,Frequency,normalize (daily/weekly/monthly),Free text ok
+retention_days,sample-backup-inventory.csv,RetentionDays,to integer,
+backup_success_state,sample-backup-inventory.csv,SuccessState,normalize (success/warn/fail),
+backup_repo,sample-backup-inventory.csv,Repo,none,
+offsite_copy,sample-backup-inventory.csv,OffsiteCopy,true/false,
+readiness_band,sample-results.csv,readiness_band,derived,Derived by your sheet; values only in sample
+reasons,sample-results.csv,reasons,derived,Semicolon-separated reasons in sample
