@@ -1,0 +1,13 @@
+src_vm,dst_vm,protocol,port,purpose,observations
+WEB01,APP01,TCP,443,HTTPS app front-end,steady daytime traffic
+APP01,DB01,TCP,1433,MSSQL,spikes at :15 past the hour
+APP01,REDIS01,TCP,6379,Cache,short bursts under load
+JOB01,DB01,TCP,1433,ETL/Batch,nightly 01:00–02:00
+JOB01,FILE01,TCP,445,SMB file drop,nightly 01:10
+WEB01,DNS01,UDP,53,DNS lookup,intermittent
+APP01,DNS01,UDP,53,DNS lookup,intermittent
+DB01,NTP01,UDP,123,NTP,low/steady
+APP01,NTP01,UDP,123,NTP,low/steady
+FILE01,BACKUP01,TCP,10000,Backup agent,high 02:00–03:00
+LEGACY01,APP01,TCP,8080,Legacy API,rare/weekly
+WEB01,LEGACY01,TCP,80,Legacy HTTP,rare/weekly
