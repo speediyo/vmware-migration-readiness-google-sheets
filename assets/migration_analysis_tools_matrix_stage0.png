@@ -1,0 +1,38 @@
+# VMware Migration Analysis Tools Matrix
+
+A community-style comparison of commonly used tools for VMware migration and readiness analysis.  
+Includes baseline (Stage-0) discovery, Stage-1 assessment suites, and cloud/hypervisor-specific migration utilities.
+
+---
+
+## Comparison Chart (Markdown Table)
+
+| Name                                         | Category              | Primary Function                          | Inputs                  | Outputs                            | Skills Required             | License/Cost   | Notes                                                                 |
+|----------------------------------------------|-----------------------|-------------------------------------------|-------------------------|-------------------------------------|-----------------------------|----------------|----------------------------------------------------------------------|
+| **Stage-0 Migration Readiness (VMware Migration Readiness, Google Sheets)** | Stage-0 (Baseline)    | Per-VM readiness baseline                  | vCenter CSV; Backup CSVs | VM scope; grouping signals; exec rollups | VMware + backup basics       | Free / CC-BY   | Google Sheets template; vendor-neutral; complements Stage-1 suites   |
+| **Stage-0 Data Gathering (RVTools)**         | Stage-0 (Baseline)    | Inventory export                           | vCenter API/CSV         | VM inventory (name, config, tags)   | VMware admin basics          | Freeware       | Lightweight utility; often first step for Stage-0 baselines          |
+| **Stage-0 Environment Health Check (vCheck)**| Stage-0 (Health Check)| Automated environment health/config reports| vSphere API             | Reports on snapshots, datastore usage, misconfigurations | VMware scripting (PowerCLI) | Free / Open source | Widely used PowerCLI framework; surfaces hygiene issues pre-migration |
+| VMware HCX                                   | Stage-1 Migration     | Live/cold migration between VMware stacks  | vCenter, HCX appliances | Mobility across sites/clouds        | VMware networking & HCX ops | Licensed        | Tight VMware integration; enables L2 stretch, live vMotion           |
+| Azure Migrate                                | Stage-1 Assessment    | Discovery, dependency, migration planning  | Agents, connectors      | Dependency maps, TCO, migration plans | Azure admin + infra basics   | Free tier; pay as you go | Native Azure migration suite; broad discovery features               |
+| Nutanix Move / Prism                         | Stage-1/2 Migration   | VM migration into Nutanix AHV              | VMware + Move connector | VM import into AHV                  | Nutanix + VMware basics       | Licensed        | Nutanix-specific tooling; smoothest AHV path                        |
+| Proxmox VE                                   | Alt Hypervisor        | Open-source virtualization stack           | VM export/import        | VM hosting                          | Linux + Ceph/ZFS skills       | Free; paid support | Open source; enterprise support available via subscription           |
+| VMC on AWS / GCVE / AVS                      | Cloud VMware Options  | VMware-as-a-Service                        | HCX, vCenter             | VMware stack on cloud infra         | VMware + cloud ops            | Subscription    | Managed VMware in AWS/GCP/Azure; fast exit if under renewal pressure |
+
+---
+
+## Comparison Chart (PNG for easy sharing)
+
+![VMware Migration Tools Matrix](assets/migration_analysis_tools_matrix_stage0.png)
+
+---
+
+## How to Interpret
+
+- **Stage-0 tools** include:
+  - *Migration Readiness* → baseline sizing and risk signals  
+  - *Data Gathering* → fast export of inventory data  
+  - *Environment Health Check* → hygiene reports to catch config gaps  
+- **Stage-1 and beyond** cover full discovery suites (Azure Migrate, Prism) and migration tooling (HCX, Move).  
+- **Alt hypervisors** and **cloud VMware** represent destination choices.
+
+**Stage-0** steps are often the first input into migration planning: they don’t replace Stage-1/2 suites, but they reduce risk by sizing scope, surfacing risky clusters, and creating exec-ready rollups.
